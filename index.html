@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 11th Monthsary, Love!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- MUSIC -->
+  <audio id="bgMusic" loop preload="auto">
+    <source src="./birds-call-your-name.mp3" type="audio/mpeg">
+  </audio>
+
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+    ♫ Play Music
+  </button>
+
+  <div class="floating-hearts">
+    <span>♡</span><span>♥</span><span>♡</span>
+    <span>♥</span><span>♡</span><span>♥</span>
+  </div>
+
+  <main class="book">
+
+    <!-- SLIDE 1 -->
+    <section class="slide active" id="slide1">
+
+      <div class="small-label">A LITTLE SURPRISE FOR YOU</div>
+
+      <h1 class="main-title">You've Got Mail!</h1>
+
+      <p class="subtitle">
+        you get a mail!<br>
+        tap on the envelope to open
+      </p>
+
+      <div class="envelope-area" onclick="openMail()">
+        <div class="envelope" id="envelope">
+          <div class="envelope-back"></div>
+          <div class="letter-inside">♡</div>
+          <div class="envelope-front"></div>
+          <div class="envelope-flap"></div>
+          <div class="envelope-heart">♥</div>
+        </div>
+      </div>
+
+      <p class="from-to">
+        FROM: KAYEESHA<br>
+        TO: ELORDIUS
+      </p>
+
+    </section>
+
+    <!-- SLIDE 2 -->
+    <section class="slide" id="slide2">
+
+      <div class="ornament">✦ ───── ♡ ───── ✦</div>
+
+      <p class="date">13 — 11 — 26</p>
+
+      <h1 class="celebration">
+        Happy 11th<br>
+        Monthsary<br>
+        <span>My Love!</span>
+      </h1>
+
+      <div class="big-heart">♥</div>
+
+      <p class="subtitle">
+        eleven months of loving you
+      </p>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue ♡
+      </button>
+
+    </section>
+
+    <!-- SLIDE 3 -->
+    <section class="slide" id="slide3">
+
+      <div class="ornament">✦ ───── ♡ ───── ✦</div>
+
+      <p class="small-label">A LITTLE SOMETHING FOR YOU</p>
+
+      <h1 class="section-title">My Gifts for You!</h1>
+
+      <div class="gift-container">
+
+        <button class="gift-card" onclick="showSlide(3)">
+          <span class="gift-icon">✉</span>
+          <span class="gift-name">Letters</span>
+          <span class="gift-desc">a letter from my heart</span>
+        </button>
+
+        <button class="gift-card" onclick="showSlide(4)">
+          <span class="gift-icon">❀</span>
+          <span class="gift-name">Flowers</span>
+          <span class="gift-desc">flowers just for you</span>
+        </button>
+
+      </div>
+
+      <p class="subtitle">
+        choose one of your little gifts ♡
+      </p>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Continue ♡
+      </button>
+
+    </section>
+
+    <!-- SLIDE 4: LETTER -->
+    <section class="slide" id="slide4">
+
+      <div class="ornament">✦ ───── ♡ ───── ✦</div>
+
+      <p class="small-label">A LETTER FOR MY FAVORITE PERSON</p>
+
+      <h1 class="section-title">Dear, My Love</h1>
+
+      <div class="letter-paper">
+
+        <p>
+          Another month with you may seem like a small thing to others,
+          but for me it's another beautiful reminder that I have someone
+          so special to love and cherish. Thank you for staying, for
+          making me feel cared for, and being my comfort even from afar.
+          Every moment with you, even the simple conversations, makes
+          my days lighter and happier.
+        </p>
+
+        <p>
+          I'm grateful for all the memories we've made and for all the
+          months we still get to celebrate together. No matter how hard
+          or far things get sometimes. I lovee youu Soo much baby, and
+          I'll always choose you, today and every monthsary after this.
+        </p>
+
+        <div class="letter-sign">
+          With all my love,<br>
+          <span>Kayeesha ♡</span>
+        </div>
+
+      </div>
+
+      <button class="next-btn" onclick="nextSlide()">
+        Next Gift ♡
+      </button>
+
+    </section>
+
+    <!-- SLIDE 5: FLOWERS -->
+    <section class="slide" id="slide5">
+
+      <div class="ornament">✦ ───── ♡ ───── ✦</div>
+
+      <p class="small-label">A BOUQUET OF LOVE</p>
+
+      <h1 class="section-title">Flowers for You!</h1>
+
+      <div class="bouquet">
+        <span>🌹</span>
+        <span>🌷</span>
+        <span>🌹</span>
+        <span>💐</span>
+        <span>🌷</span>
+      </div>
+
+      <div class="reasons">
+
+        <p>
+          I love you because you always know how to make me smile
+          even on my hardest days.
+        </p>
+
+        <p>
+          I love you because your love make me feel safe, valued,
+          and appreciated.
+        </p>
+
+        <p>
+          I love you because you stay patient and understanding
+          with me.
+        </p>
+
+        <p>
+          I love you because being with you makes my heart the
+          happiest it has ever been.
+        </p>
+
+      </div>
+
+      <p class="flower-ending">
+        (Flowers for you!) ♡
+      </p>
+
+      <button class="next-btn" onclick="nextSlide()">
+        One More Thing ♡
+      </button>
+
+    </section>
+
+    <!-- SLIDE 6: MEMORIES -->
+    <section class="slide final-slide" id="slide6">
+
+      <div class="ornament">✦ ───── ♡ ───── ✦</div>
+
+      <p class="small-label">ELEVEN MONTHS AND COUNTING</p>
+
+      <h1 class="section-title">To My Elordius</h1>
+
+      <div class="memory-decoration">
+        <span>♡</span>
+        <span>✿</span>
+        <span>♥</span>
+        <span>✿</span>
+        <span>♡</span>
+      </div>
+
+      <div class="memory-paper">
+
+        <p>
+          Thank you for choosing me every single day. thank you for
+          your patience, your understanding, your love, and your
+          constant support. Thank you for staying beside me even
+          during the days when things weren't easy. Our relationship
+          hasn't been perfect, but it's real, and that's what make
+          it so spesial to me. we've grown together, learned from
+          our mistakes, and continued loving each other through it all.
+        </p>
+
+        <p>
+          you are my comfort, my safe place, my best friend, and the
+          person who makes ordinary days feel extraordinary.
+        </p>
+
+        <p>
+          No matter what challenges come our way, i hope we continue
+          to choose each other, continue communicate, continue to
+          grow, and continue to love one another with the same
+          sincenth that brought us together.
+        </p>
+
+        <p>
+          Thanks you for being my fav person, my favorite hello,
+          and my hardest goodbye. Thank you for filling my life
+          with love, happiness, and countless beautiful memories.
+          I am so lucky to call you mine.
+        </p>
+
+        <div class="final-message">
+          Happy monthsary, baby! ♡
+        </div>
+
+      </div>
+
+      <div class="couple-name">
+        KAYEESHA <span>♡</span> ELORDIUS
+      </div>
+
+      <p class="forever">
+        with love, always and forever.
+      </p>
+
+      <button class="next-btn" onclick="restartSlides()">
+        Read Again ♡
+      </button>
+
+    </section>
+
+    <!-- NAVIGATION -->
+    <div class="navigation" id="navigation"></div>
+
+  </main>
+
+  <script>
+    // SLIDE SYSTEM
+
+    const slides = document.querySelectorAll(".slide");
+    const navigation = document.getElementById("navigation");
+
+    let currentSlide = 0;
+
+    slides.forEach((slide, index) => {
+      const dot = document.createElement("button");
+
+      dot.className = "nav-dot";
+      dot.setAttribute("aria-label", "Slide " + (index + 1));
+
+      dot.onclick = () => showSlide(index);
+
+      navigation.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".nav-dot");
+
+    function showSlide(index) {
+      if (index < 0 || index >= slides.length) return;
+
+      slides[currentSlide].classList.remove("active");
+      dots[currentSlide].classList.remove("selected");
+
+      currentSlide = index;
+
+      slides[currentSlide].classList.add("active");
+      dots[currentSlide].classList.add("selected");
+
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      });
+    }
+
+    function nextSlide() {
+      if (currentSlide < slides.length - 1) {
+        showSlide(currentSlide + 1);
+      }
+    }
+
+    function restartSlides() {
+      showSlide(0);
+    }
+
+    // ENVELOPE
+
+    function openMail() {
+      const envelope = document.getElementById("envelope");
+
+      if (envelope.classList.contains("opened")) return;
+
+      envelope.classList.add("opened");
+
+      setTimeout(() => {
+        showSlide(1);
+      }, 900);
+    }
+
+    // MUSIC SYSTEM
+
+    const music = document.getElementById("bgMusic");
+    const musicBtn = document.getElementById("musicBtn");
+
+    async function toggleMusic() {
+
+      if (music.paused) {
+
+        try {
+          await music.play();
+
+          musicBtn.innerHTML = "♫ Pause Music";
+          musicBtn.classList.add("playing");
+
+        } catch (error) {
+
+          console.error("Music error:", error);
+
+          musicBtn.innerHTML = "♫ Try Again";
+
+          alert(
+            "Musik belum bisa diputar. Pastikan file MP3 berada satu folder dengan index.html dan dapat dibuka."
+          );
+
+        }
+
+      } else {
+
+        music.pause();
+
+        musicBtn.innerHTML = "♫ Play Music";
+        musicBtn.classList.remove("playing");
+
+      }
+
+    }
+
+    music.addEventListener("play", () => {
+      musicBtn.innerHTML = "♫ Pause Music";
+      musicBtn.classList.add("playing");
+    });
+
+    music.addEventListener("pause", () => {
+      musicBtn.innerHTML = "♫ Play Music";
+      musicBtn.classList.remove("playing");
+    });
+
+    music.addEventListener("error", () => {
+      console.error("Audio file could not be loaded.");
+    });
+
+    // FIRST NAVIGATION DOT
+
+    dots[0].classList.add("selected");
+
+  </script>
+
+</body>
+</html>
